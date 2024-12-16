@@ -86,6 +86,7 @@ def copy_text():
     """Copy text using Ctrl+C"""
     autoit.send("^a")  # Select all text
     autoit.send("^c")  # Copy selected text
+    backspace_text()  # Clear selection
 
 def show_warning(warning, title, button):
     """Display a Windows warning message"""
@@ -104,9 +105,11 @@ def present_slide(content, title="H.P. Lovecraft Presentation"):
 if __name__ == "__main__":
     check_autoit()
     open_notepad()
-    move_notepad(100, 100)
-    scale_notepad(800, 600)
     copy_text()
+    time.sleep(0.5)
+    move_notepad(100, 100)
+    scale_notepad(800, 800)
+    
     
     
     
@@ -126,13 +129,12 @@ En berättelse om skräckmästaren som förändrade horror-genren.""")
     present_slide("""BARNDOM OCH UPPVÄXT
 ==================
 Howard Phillips Lovecraft föddes den 20 augusti 1890 i Providence, 
-Rhode Island. Hans tidiga år präglades av både tragedi och 
-privilegier. När Lovecraft var tre år gammal drabbades hans far 
-av en psykisk sjukdom och togs in på mentalsjukhus, där han 
-senare dog 1898.
+Rhode Island. Hans tidiga år präglades av tragedi. När Lovecraft var 
+tre år gammal drabbades hans far av en psykisk sjukdom och togs in 
+på mentalsjukhus, där han senare dog 1898.
 
 Efter faderns bortgång växte Lovecraft upp i sin morfars stora 
-viktorianska hus, omgiven av böcker och uppmuntrad att utforska 
+hus, omgiven av böcker och uppmuntrad att utforska 
 litteraturen. Hans mor, Sarah, och hans två mostrar tog hand 
 om honom, men familjens välstånd skulle snart förändras.""")
 

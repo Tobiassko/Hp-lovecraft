@@ -1,4 +1,4 @@
-('D:\\python projects\\H.p.lovecraft\\build\\H.p.Lovecraft\\PYZ-00.pyz',
+('D:\\python projects\\Hp-lovecraft\\build\\H.p.Lovecraft\\PYZ-00.pyz',
  [('PIL',
    'C:\\Users\\tobel\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
